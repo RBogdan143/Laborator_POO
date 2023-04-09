@@ -23,7 +23,7 @@ Metoda 'alocare_lit' aloca fiecare caracter introdus de utilizator pana cand se 
 Destructorul clasei este gol, deoarece nu sunt necesare actiuni speciale pentru a elibera memoria alocata dinamic.
 
 
-Clasa numita **'Magazin'** si reprezinta un magazin care vinde jocuri. Clasa contine variabile membre private, care sunt pointeri la caractere (char*) si pointeri la numere in virgula mobila (float*). Variabilele membre sunt urmatoarele:
+Clasa numita **'Magazin'** contine variabile membre private, care sunt pointeri la caractere (char*) si pointeri la numere in virgula mobila (float*). Variabilele membre sunt urmatoarele:
 *  **'nume_magazin'**: reprezinta numele magazinului si este un pointer la caractere.
 *  **'lista_jocuri'**: reprezinta lista jocurilor disponibile in magazin si este un pointer la caractere.
 *  **'push_nume'**: este un pointer la caractere folosit pentru a citi numele magazinului de la tastatura.
