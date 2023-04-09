@@ -1,5 +1,4 @@
 # Laborator_POO
-Proiecte_Poo
 Prima clasa se numeste **'ListaDeNumere'** si are doua metode supraincarcate numite 'alocare_num'. Clasa primeste un numar intreg 'nr_elem' la initializare, care reprezinta numarul de elemente pe care lista trebuie sa le contina.
 
 In functia 'alocare_num(float *list)' se aloca dinamic un array de tip float cu numarul de elemente dat la initializare si se cere de la utilizator sa introduca valorile fiecarui element al listei prin intermediul fluxului de intrare 'cin'. Aceasta functie este utilizata pentru alocarea unui array de numere reale.
