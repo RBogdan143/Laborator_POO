@@ -58,9 +58,9 @@ public:
     ~ListaDeLitere(){}
 };
 
-// In aceasta clasa definesc obiectul 'Magazin' prin a aloca dinamic un array de char-uri reprezentând 'numele magazinului' prin constructor.
-// Apoi, aloc dinamic un alt array de char-uri reprezentând 'stock-ul magazinului' prin clasa 'ListaDeLitere'.
-// Si, in cele din urma, aloc dinamic un array de float-uri reprezentând 'pretul produselor din stock' prin clasa 'ListaDeNumere'.
+// In aceasta clasa definesc obiectul 'Magazin' prin a aloca dinamic un array de char-uri reprezentÃ¢nd 'numele magazinului' prin constructor.
+// Apoi, aloc dinamic un alt array de char-uri reprezentÃ¢nd 'stock-ul magazinului' prin clasa 'ListaDeLitere'.
+// Si, in cele din urma, aloc dinamic un array de float-uri reprezentÃ¢nd 'pretul produselor din stock' prin clasa 'ListaDeNumere'.
 class Magazin
 {
     char *nume_magazin, *lista_jocuri, *push_nume;
@@ -183,13 +183,11 @@ public:
     ~Magazin()
     {
         delete[] nume_magazin;
-        delete[] lista_jocuri;
-        delete[] lista_preturi;
     }
 };
 
 // In aceasta clasa preluam stock-ul din clasa 'Magazin' si introducem balanta clientului prin constructor.
-// Apoi, alocam dinamic un array de char-uri reprezentând 'produsele pe care vrem sa le adaugam in cos' prin clasa 'ListaDeLitere'.
+// Apoi, alocam dinamic un array de char-uri reprezentÃ¢nd 'produsele pe care vrem sa le adaugam in cos' prin clasa 'ListaDeLitere'.
 // Si, verificam daca toate produsele din cos se afla in stock-ul magazinului prin metoda 'verificare_stock'.
 // Daca nu este un produs in stock, atunci se afiseaza pe ecran produsul care nu este in stock prin metoda 'afisare_joc' din clasa 'Magazin' si,
 // Apoi se reseteaza metoda 'cumpara_jocuri' pentru a ne lasa sa incercam din nou.
@@ -322,12 +320,7 @@ public:
     {
         balanta_cont = balanta_noua;
     }
-    ~Client()
-    {
-        delete[] cos_de_cumparaturi;
-        delete[] cantitatea;
-        delete[] stock;
-    }
+    ~Client(){}
 };
 
 // In aceasta clasa preluam stock-ul si preturile din clasa 'Magazin', iar din clasa 'Client', cosul si cantitatea produselor prin constructor.
