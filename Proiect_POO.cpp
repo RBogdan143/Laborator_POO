@@ -183,6 +183,8 @@ public:
     ~Magazin()
     {
         delete[] nume_magazin;
+        delete[] lista_jocuri;
+        delete[] lista_preturi;
     }
 };
 
@@ -320,7 +322,11 @@ public:
     {
         balanta_cont = balanta_noua;
     }
-    ~Client(){}
+    ~Client()
+    {
+        delete[] cos_de_cumparaturi;
+        delete[] cantitatea;
+    }
 };
 
 // In aceasta clasa preluam stock-ul si preturile din clasa 'Magazin', iar din clasa 'Client', cosul si cantitatea produselor prin constructor.
@@ -453,10 +459,6 @@ public:
     }
     ~Checkout()
     {
-        delete[] jocuri_alese;
-        delete[] get_index_stock;
-        delete[] numar_produse;
-        delete[] pret_produse;
         delete[] ordine;
     }
 };
